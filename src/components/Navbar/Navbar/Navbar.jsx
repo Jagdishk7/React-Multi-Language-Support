@@ -9,6 +9,7 @@ const locales = {
   hi: { nativeName: 'हिंदी' },
   chi: { nativeName: '中国人' },
   ko: { nativeName: '한국인' },
+  ar: { nativeName: 'عربي' }
 };
 
 const Navbar = () => {
@@ -42,7 +43,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className=" jcsb">
+        <div className="btn-container jcsb">
           {Object.keys(locales).map((locale) => (
             <button key={locale} style={{ fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(locale)}>
               {locales[locale].nativeName}
@@ -60,12 +61,6 @@ const Navbar = () => {
           </div>
       
       </nav>
-
-      {/* hero section  */}
-      {/* <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical</h1>
-      </section> */}
     </>
   );
 };

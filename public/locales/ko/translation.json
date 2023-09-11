@@ -1,7 +1,8 @@
 {
     "main":{
-        "home":"Welcome Olecon to Home Page. At Olecons we are passionate about providing our clients with innovative and bespoke design and development support.",
-        "about":"Over 11 years experience in software development and product management our own team of industry experts develop end-to-end solutions, taking our clients from idea conception to a fully functioning app or web presence.We know that user experience is everything, which is why our quality assurance systems, web development strategies and analytic tools are optimized to ensure that we understand your customers and how we can connect them with your business. Our team takes over everything, from an idea and concept development to realization. We believe in traditions and incorporate them within our innovations. All our projects incorporate a unique artistic image and functional solutions. .",
-        "contact":"VIJAY NAGAR SQUARE, INDORE"
+        "home":"Olecon 홈 페이지에 오신 것을 환영합니다. Olecons에서는 고객에게 혁신적이고 맞춤형 디자인 및 개발 지원을 제공하는 데 열정을 쏟고 있습니다.",
+        "about":"소프트웨어 개발 및 제품 관리 분야에서 11년 이상의 경험을 쌓은 당사의 업계 전문가 팀은 엔드투엔드 솔루션을 개발하여 고객이 아이디어 구상부터 완전히 작동하는 앱 또는 웹 존재에 이르기까지 지원합니다.우리는 사용자 경험이 전부라는 것을 알고 있습니다. 당사의 품질 보증 시스템, 웹 개발 전략 및 분석 도구는 귀하의 고객을 이해하고 고객을 귀하의 비즈니스와 연결하는 방법을 보장하도록 최적화되어 있습니다. 우리 팀은 아이디어와 컨셉 개발부터 구현까지 모든 것을 담당합니다. 우리는 전통을 믿고 이를 혁신에 통합합니다. 우리의 모든 프로젝트에는 독특한 예술적 이미지와 기능적 솔루션이 통합되어 있습니다.",
+        "contact":"비자이 나가르 광장, 인도르",
+        "footer": "작성자:"
     }
 }

@@ -1,7 +1,8 @@
 {
     "main":{
-        "home":"Welcome Olecon to Home Page. At Olecons we are passionate about providing our clients with innovative and bespoke design and development support.",
-        "about":"Over 11 years experience in software development and product management our own team of industry experts develop end-to-end solutions, taking our clients from idea conception to a fully functioning app or web presence.We know that user experience is everything, which is why our quality assurance systems, web development strategies and analytic tools are optimized to ensure that we understand your customers and how we can connect them with your business. Our team takes over everything, from an idea and concept development to realization. We believe in traditions and incorporate them within our innovations. All our projects incorporate a unique artistic image and functional solutions. .",
-        "contact":"VIJAY NAGAR SQUARE, INDORE"
+        "home":"欢迎来到 Olecons 主页。在 Olecons，我们热衷于为客户提供创新和定制的设计和开发支持。",
+        "about":"我们拥有超过 11 年的软件开发和产品管理经验，我们自己的行业专家团队开发端到端解决方案，帮助我们的客户从构思到功能齐全的应用程序或网站。我们知道用户体验就是一切，这就是为什么我们的质量保证系统、网络开发策略和分析工具都经过优化，以确保我们了解您的客户以及如何将他们与您的业务联系起来。我们的团队接管一切，从想法和概念的开发到实现。我们相信传统并将其融入我们的创新中。我们所有的项目都融合了独特的艺术形象和功能解决方案。",
+        "contact":"印多尔维杰纳加尔广场",
+        "footer": "由...制作"
     }
 }
