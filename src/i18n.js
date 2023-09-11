@@ -20,30 +20,9 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    fallbackLng: "en",
-    debug: true,
-
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    },
-    resources: {
-      en: {
-        translation: {
-          description: {
-            part1: "Edit <1>src/App.js</1> and save to reload.",
-            part2: "Learn React",
-          },
-        },
-      },
-      de: {
-        translation: {
-          description: {
-            part1: "Ändere <1>src/App.js</1> und speichere um neu zu laden.",
-            part2: "Lerne React",
-          },
-        },
-      },
-    },
+      debug: true,
+    //   if requested language will not be found we will use English
+      fallbackLng: "en",
   });
 
 export default i18n;

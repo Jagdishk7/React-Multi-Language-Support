@@ -1,45 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-import { useTranslation, Trans } from 'react-i18next';
+import React, { Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar/Navbar/Navbar';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
-const lngs = {
-  en: { nativeName: 'English' },
-  de: { nativeName: 'Deutsch' }
-};
 
-function App() {
+function MyComponent() {
 
-  const { t, i18n } = useTranslation();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+    
 
-        {/* This Will be used to switch Languages */}
-        <div>
-          {Object.keys(lngs).map((lng) => (
-            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-              {lngs[lng].nativeName}
-            </button>
-          ))}
-        </div>
+  <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+      
 
-        <p>
-        <Trans i18nKey="description.part1">
-            Edit <code>src/App.js</code> and save to reload.
-          </Trans>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t('description.part2')}
-        </a>
-      </header>
-    </div>
-  );
+
+
+  </>
+  )
 }
 
-export default App;
+// i18n translations might still be loaded by the http backend
+// use react's Suspense
+export default function App() {
+  return (
+    <Suspense fallback="loading">
+      <MyComponent />
+    </Suspense>
+  );
+}
