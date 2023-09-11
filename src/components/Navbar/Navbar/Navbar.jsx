@@ -42,7 +42,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
         <div className="btn-container jcsb">
           {Object.keys(locales).map((locale) => (
             <button key={locale} style={{ fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(locale)}>
@@ -51,11 +50,12 @@ const Navbar = () => {
           ))}
         </div>
 
+
         {/* 3rd social media links */}
         
           {/* hamburget menu start  */}
           <div className="hamburger-menu">
-            <div onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            <div className="center" onClick={() => setShowMediaIcons(!showMediaIcons)}>
               <GiHamburgerMenu />
             </div>
           </div>

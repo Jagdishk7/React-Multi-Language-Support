@@ -1,14 +1,16 @@
 import React from "react";
-import { useTranslation } from 'react-i18next';
-import '../../App.css'
+import { useTranslation } from "react-i18next";
+import "../../App.css";
 
 const Home = () => {
-    const { t } = useTranslation();
+  // extracting the t property by using destructuring
+  const { t } = useTranslation();
 
   return (
     <>
-      <main className="center main">
-      <h1>{t('main.home')}</h1>
+      <main className="main">
+        {/* populating data from locales folder depend upon selected language */}
+        <h1>{t("main.home")}</h1>
       </main>
     </>
   );

@@ -15,6 +15,7 @@ function MyComponent() {
 
   <BrowserRouter>
         <Navbar />
+        {/* Routes to switch component based on NavLink path from Navbar */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -31,7 +32,7 @@ function MyComponent() {
 }
 
 // i18n translations might still be loaded by the http backend
-// use react's Suspense
+// using react's Suspense to display a fallback text untill childs are loaded
 export default function App() {
   return (
     <Suspense fallback="loading">
